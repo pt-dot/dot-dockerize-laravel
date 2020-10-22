@@ -1,4 +1,4 @@
-FROM php:7.4-apache-stretch
+FROM php:7.4-apache-buster
 
 # update repos and install lib
 RUN apt update -y && apt install -y libcurl4-gnutls-dev libicu-dev \
@@ -48,7 +48,7 @@ ADD https://raw.githubusercontent.com/kudaliar032/dot-dockerize-laravel/master/c
 RUN a2enmod rewrite headers
 
 # clean cache
-RUN apt autoremove && rm -rf /var/cache/apt/archives/* && rm -rf /tmp/*
+RUN apt autoremove -y && rm -rf /var/cache/apt/archives/* && rm -rf /tmp/*
 
 # change storage directory permission and run apache2
 ADD https://raw.githubusercontent.com/kudaliar032/dot-dockerize-laravel/master/config/docker-start /usr/local/bin
