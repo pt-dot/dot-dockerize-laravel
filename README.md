@@ -5,7 +5,7 @@ Digunakan untuk menjalankan project laravel menggunakan docker, sehingga dapat m
 
 ### Webapp
 - [x] Apache2 (rewrite, headers)
-- [x] PHP7.3/7.2/7.1/5.6 (pdo_mysql, intl, gd, zip, bz2, opcache, ldap, bcmath, mysqli, mongodb)
+- [x] PHP 7.4/7.3/7.2/7.1/5.6 (pdo_mysql, intl, gd, zip, bz2, opcache, ldap, bcmath, mysqli, mongodb)
 - [x] Composer
 - [x] GNU Nano
 - [x] phpMyAdmin
@@ -34,7 +34,7 @@ Digunakan untuk menjalankan project laravel menggunakan docker, sehingga dapat m
 Bagi developer yang belum terbiasa dengan docker/docker-compose dapat menggunakan script ini agar mempermudah penggunaan
 
 ### Linux/macOS
-Install 
+Install
 ```
 curl -sS https://raw.githubusercontent.com/kudaliar032/dot-dockerize-laravel/master/unix/dot-docker.sh -o dot-docker && sudo mv dot-docker /usr/local/bin && sudo chmod +x /usr/local/bin/dot-docker
 ```
